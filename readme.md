@@ -63,7 +63,7 @@ Now you should to have a lot of files in `goodrecipes/webapp/`, `goodrecipes/api
 
 #### Install and configure
 
-**Install depandancies**
+**Install from scratch, depandancies**
 
 `sudo apt-get install curl git-core build-essential zlib1g-dev libssl-dev libreadline6-dev gem libyaml-dev`
 
@@ -73,8 +73,50 @@ Now you should to have a lot of files in `goodrecipes/webapp/`, `goodrecipes/api
 
 *if you have some problem you should to follow [these instructions](https://rvm.io/rvm/install)*
 
-Binaries are installed in `$HOME/.rvm`. You should to give rvm access via your term, (if you use bash)    `echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bashrc`   and now close your term or if you prefer smarter solution:    `source ~/.bashrc`
+Binaries are installed in `$HOME/.rvm`. You should to give rvm access via your term, (if you use bash)
 
+`echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bashrc`
+
+Now close your term or if you prefer smarter solution:
+
+`source ~/.bashrc`
+
+Try this command to see if it works:
+
+`rvm info`
+
+**Install Ruby**
+
+We want to install the `2.1.1` version but you can specify any version you want.
+
+`rvm install 2.1.1`
+
+Choose your default ruby version:
+
+`rvm --default 2.1.1`
+
+All works ?
+
+`ruby -v`
+
+**Rails installation**
+
+`gem install rails`
+
+**Install depedancies in webapp**
+
+Now go inside of the webapp `goodrecipes/webapp/`, and run this command :
+
+`bundle install`
+
+After you should to have `bower` installer if not be sure `npm` is installed:
+
+`npm install bower`
+
+When `Bower` is installed follow this instruction to init the asset components:
+
+`rake bower:install`
+_If bower ask you to choose some version, take the choice with the `1.3.x` angular version._
 
 ## API - application
 
