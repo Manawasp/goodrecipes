@@ -1,4 +1,5 @@
 # Goodrecipes
+Group all subproject goodrecipes. Module Project Training - 2015 - Beijing Jiao Tong University - Beijing, China
 
 ## Summary
 
@@ -11,7 +12,7 @@
 	1. [Framework / Libraries / Languages](https://github.com/Manawasp/goodrecipes#framework--libraries--languages-1)
 	2. [Installation](https://github.com/Manawasp/goodrecipes#install-and-configure-1)
 5. [Authors](https://github.com/Manawasp/goodrecipes#authors)
-	1. Clovis Kyndt
+	1. [Clovis Kyndt](https://github.com/Manawasp/goodrecipes#clovis-kyndt)
 
 ## Description
 
@@ -23,7 +24,22 @@ Goodrecipes is a project where you manipulate ingredients and recipes created du
 
 ## Repository
 
+I use submodule so you to retrieve all of this repository you should to follow these instructions.
 
+**Shorter way:**
+
+`git clone --recursive git@github.com:Manawasp/goodrecipes.git goodrecipes`
+
+**Other way:**
+
+```
+$ git clone git@github.com:Manawasp/goodrecipes.git goodrecipes`
+$ cd goodrecips
+$ git submodule init
+$ git submodule update
+```
+
+Finally you should to have a lot of files in `goodrecipes/webapp/`, `goodrecipes/api/` :).
 
 ## Web - application
 
@@ -55,7 +71,9 @@ Goodrecipes is a project where you manipulate ingredients and recipes created du
 - [Expect/Should (Test Units)](http://chaijs.com/api/bdd/)
 - [JWT](jwt.io)
 
-### Installation _soon_
+### Installation and configure
+
+_soon_
 
 ## Authors
 
