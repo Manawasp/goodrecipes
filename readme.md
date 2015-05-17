@@ -1,5 +1,18 @@
 # Goodrecipes
 
+## Summary
+
+1. [Description](https://github.com/Manawasp/goodrecipes#description)
+2. [Repository](https://github.com/Manawasp/goodrecipes#repository)
+3. [Web - application](https://github.com/Manawasp/goodrecipes#web---application)
+	1. [Framework / Libraries / Languages](https://github.com/Manawasp/goodrecipes#framework--libraries--languages)
+	2. [Installation](https://github.com/Manawasp/goodrecipes#install-and-configure)
+4. [API - application](https://github.com/Manawasp/goodrecipes#api---application)
+	1. [Framework / Libraries / Languages](https://github.com/Manawasp/goodrecipes#framework--libraries--languages-1)
+	2. [Installation](https://github.com/Manawasp/goodrecipes#install-and-configure-1)
+5. [Authors](https://github.com/Manawasp/goodrecipes#authors)
+	1. Clovis Kyndt
+
 ## Description
 
 Goodrecipes is a project where you manipulate ingredients and recipes created during our curriculum at Beijing Jiao Tong University. It will have mobile application (android), web application and an API. There is different kind of user.
@@ -7,6 +20,10 @@ Goodrecipes is a project where you manipulate ingredients and recipes created du
 - Cooker is able to create and manage its recipes
 - Grosist is able to create and manage ingredients
 - Admin is able to create and manage everything, and have access to 'sexy' user data
+
+## Repository
+
+
 
 ## Web - application
 
@@ -23,7 +40,7 @@ Goodrecipes is a project where you manipulate ingredients and recipes created du
 
 #### Install and configure
 
-- Installation __soon__
+- Installation _soon_
 
 ## API - application
 
@@ -37,6 +54,15 @@ Goodrecipes is a project where you manipulate ingredients and recipes created du
 - [Mocha.js (Test Units)](http://mochajs.org/)
 - [Expect/Should (Test Units)](http://chaijs.com/api/bdd/)
 - [JWT](jwt.io)
+
+### Installation _soon_
+
+## Authors
+
+### Clovis Kyndt
+
+- Works: Web application, API, Conception.
+- Contact: [Github](https://github.com/Manawasp), [Website](http://cloviskyndt.com)
 
 ## Source
 
