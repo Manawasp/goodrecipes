@@ -46,7 +46,7 @@ $ git submodule init
 $ git submodule update
 ```
 
-Finally you should to have a lot of files in `goodrecipes/webapp/`, `goodrecipes/api/` :).
+Now you should to have a lot of files in `goodrecipes/webapp/`, `goodrecipes/api/`.
 
 ## Web - application
 
@@ -63,7 +63,18 @@ Finally you should to have a lot of files in `goodrecipes/webapp/`, `goodrecipes
 
 #### Install and configure
 
-- Installation _soon_
+**Install depandancies**
+
+`sudo apt-get install curl git-core build-essential zlib1g-dev libssl-dev libreadline6-dev gem libyaml-dev`
+
+**Download RVM (Ruby Version Manager)**
+
+`curl -sSL https://get.rvm.io | bash`
+
+*if you have some problem you should to follow [these instructions](https://rvm.io/rvm/install)*
+
+Binaries are installed in `$HOME/.rvm`. You should to give rvm access via your term, (if you use bash)    `echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bashrc`   and now close your term or if you prefer smarter solution:    `source ~/.bashrc`
+
 
 ## API - application
 
