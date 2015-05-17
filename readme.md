@@ -57,9 +57,7 @@ Now you should to have a lot of files in `goodrecipes/webapp/`, `goodrecipes/api
 - [AngularJS Material Design](http://material.angularjs.org)
 - [Rails - 4.1.4](http://rubyonrails.org/)
 
-#### Install / Configure / Deploy
-
-##### Install from scratch
+#### Install from scratch
 
 **depandancies**    
 `sudo apt-get install curl git-core build-essential zlib1g-dev libssl-dev libreadline6-dev gem libyaml-dev`
@@ -107,12 +105,12 @@ _If bower ask you to choose some version, take the choice with the `1.3.x` angul
 
 #### Deploy
 
-_API should to run if you want to haven't issues._    
+_API should to run if you don't want to have issues._    
 `rails s -p 3000`
 
 **note**: Currently there is no production mode, api and website you should to run in the same IP, api need to run on the port 8080.
 
-#### Developmentt
+#### Development Environnement
 
 I use haml but rails compile haml only in `app/views` or my HAML template for Angular are in `webapp/app/assets/javascripts/templates/`.
 To manage this I use `guard` & `guard-haml` so if you want to compile this file go in `webapp/' and just run:    
@@ -132,9 +130,42 @@ When you will save your file, guard will compile it automatically and he will pr
 - [Expect/Should (Test Units)](http://chaijs.com/api/bdd/)
 - [JWT](jwt.io)
 
-### Installation and configure
+### Installation
 
-_soon_
+**Node.js & NPM**    
+
+You should to install `node.js` and `npm`, I recommand to install via the [official website](https://nodejs.org/).     
+If you install it by your repositories you should to be sure than `node` command exist, if `node` doesn't exist:     
+Use `which node.js` to locate you node binary, and then build a link in the same directory `ln -s [PATH_GENERATED_BY_WHICH] node`.
+
+**MongoDB & Redis**
+Install mongo and redis and be sure after the install that they run.
+
+### Configure
+
+Go inside of the API directory `goodrecipes/api/` and download libraries:    
+`npm install`
+
+### Deploy
+
+_API haven't production state for this moment so be sure to use in the same IP, if not pictures will fail_    
+Inside of the `goodrecipes/api/` run the following command to run the API:    
+`node app.js`
+
+### Unit Testing
+
+I use mocha, expect, fs to build my test. I test almost everythings in my API, but there no case study. I try to catch all errors and success.    
+My unit test are in the `api/test/` file, the `api/test/datas` contain some picture to test upload.    
+**Before to run the test** the database need to be empty ! There no database management in my test so you should to do manually.
+
+To reset the database use mongo shell `mongo` connect to goodrecipes database `use foodapi` and delete it `db.dropDatabase()`
+
+## Database
+
+We provide a database image, to init the server and don't start from scratch because it's very painfull to add a lot of data in the database manually.
+First you should to go in `goodrecipes/api/` and decompress the archive `unzip initDB.zip` after you should to have a `restor` dir, so go inside.
+When you are in `goodrecipes/api/restore/` you can see a dump dir just use `mongorestore` command to build the foodapi database.    
+Now you need to provide pictures, it's easy just copy and paste the dir `goodrecipes/api/restore/pictures` in `goorecipes/api/public/` 
 
 ## Authors
 
