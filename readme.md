@@ -1,9 +1,9 @@
 # Goodrecipes
 
-_Group all subproject goodrecipes_
-_Module Project Training_
-_Beijing Jiao Tong University 2015_
-_Beijing, China_
+Group all subproject goodrecipes    
+Module Project Training
+Beijing Jiao Tong University 2015
+Beijing, China
 
 ## Summary
 
