@@ -57,9 +57,11 @@ Now you should to have a lot of files in `goodrecipes/webapp/`, `goodrecipes/api
 - [AngularJS Material Design](http://material.angularjs.org)
 - [Rails - 4.1.4](http://rubyonrails.org/)
 
-#### Install and configure
+#### Install / Configure / Deploy
 
-**Install from scratch, depandancies**    
+##### Install from scratch
+
+**depandancies**    
 `sudo apt-get install curl git-core build-essential zlib1g-dev libssl-dev libreadline6-dev gem libyaml-dev`
 
 **Download RVM (Ruby Version Manager)**    
@@ -90,7 +92,7 @@ All works ?
 **Rails installation**    
 `gem install rails`
 
-**Install depedancies in webapp**
+#### Configure
 
 Now go inside of the webapp `goodrecipes/webapp/`, and run this command:    
 `bundle install`
@@ -102,6 +104,20 @@ When `Bower` is installed follow this instruction to init the asset components:
 `rake bower:install`
 
 _If bower ask you to choose some version, take the choice with the `1.3.x` angular version._
+
+#### Deploy
+
+_API should to run if you want to haven't issues._    
+`rails s -p 3000`
+
+**note**: Currently there is no production mode, api and website you should to run in the same IP, api need to run on the port 8080.
+
+#### Developmentt
+
+I use haml but rails compile haml only in `app/views` or my HAML template for Angular are in `webapp/app/assets/javascripts/templates/`.
+To manage this I use `guard` & `guard-haml` so if you want to compile this file go in `webapp/' and just run:    
+`guard start`    
+When you will save your file, guard will compile it automatically and he will provide a notification if there is success or error.
 
 ## API - application
 
