@@ -21,18 +21,23 @@ Goodrecipes is a project where you manipulate ingredients and recipes created du
 - [AngularJS Material Design](http://material.angularjs.org)
 - [Rails - 4.1.4](http://rubyonrails.org/)
 
+#### Install and configure
+
+- Installation __soon__
+
 ## API - application
 
 #### Framework / Libraries / Languages
 
-- node.js
-
+- [Node.js](https://nodejs.org/)
+- [Apiary (documentation)](http://docs.foodapicn.apiary.io/)
+- [Mongodb](https://www.mongodb.org/)
+- [Redis](http://redis.io/)
+- [Express](http://expressjs.com/)
+- [Mocha.js (Test Units)](http://mochajs.org/)
+- [Expect/Should (Test Units)](http://chaijs.com/api/bdd/)
+- [JWT](jwt.io)
 
 ## Source
 
-- [food api documentation](http://docs.foodapicn.apiary.io/)
-- [food api server](https://github.com/ftb59/Nourriture)
 - [installation Rails via RVM - recommended](http://doc.ubuntu-fr.org/rubyonrails)
-- [AngularJS](http://angularjs.org)
-- [Material Design for AngularJS](http://material.angularjs.org)
-- [BootstrapCSS](http://getbootstrap.com/)
