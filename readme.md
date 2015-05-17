@@ -11,11 +11,18 @@ Beijing, China
 2. [Repository](https://github.com/Manawasp/goodrecipes#repository)
 3. [Web - application](https://github.com/Manawasp/goodrecipes#web---application)
 	1. [Framework / Libraries / Languages](https://github.com/Manawasp/goodrecipes#framework--libraries--languages)
-	2. [Installation](https://github.com/Manawasp/goodrecipes#install-and-configure)
+	2. [Installation from scratch](https://github.com/Manawasp/goodrecipes#install-from-scratch)
+  3. [Configure](https://github.com/Manawasp/goodrecipes#configure)
+  4. [Deploy](https://github.com/Manawasp/goodrecipes#deploy)
+  5. [Development environnement](https://github.com/Manawasp/goodrecipes#development-environnement)
 4. [API - application](https://github.com/Manawasp/goodrecipes#api---application)
 	1. [Framework / Libraries / Languages](https://github.com/Manawasp/goodrecipes#framework--libraries--languages-1)
-	2. [Installation](https://github.com/Manawasp/goodrecipes#install-and-configure-1)
-5. [Authors](https://github.com/Manawasp/goodrecipes#authors)
+	2. [Installation](https://github.com/Manawasp/goodrecipes#installation)
+  3. [Configure](https://github.com/Manawasp/goodrecipes#configure-1)
+  4. [Deploy](https://github.com/Manawasp/goodrecipes#deploy-1)
+  5. [Unit testing](https://github.com/Manawasp/goodrecipes#unit-testing)
+5. [Database](https://github.com/Manawasp/goodrecipes#database)
+6. [Authors](https://github.com/Manawasp/goodrecipes#authors)
 	1. [Clovis Kyndt](https://github.com/Manawasp/goodrecipes#clovis-kyndt)
 
 ## Description
@@ -138,7 +145,8 @@ You should to install `node.js` and `npm`, I recommand to install via the [offic
 If you install it by your repositories you should to be sure than `node` command exist, if `node` doesn't exist:     
 Use `which node.js` to locate you node binary, and then build a link in the same directory `ln -s [PATH_GENERATED_BY_WHICH] node`.
 
-**MongoDB & Redis**
+**MongoDB & Redis**    
+
 Install mongo and redis and be sure after the install that they run.
 
 ### Configure
@@ -163,17 +171,13 @@ To reset the database use mongo shell `mongo` connect to goodrecipes database `u
 ## Database
 
 We provide a database image, to init the server and don't start from scratch because it's very painfull to add a lot of data in the database manually.
-First you should to go in `goodrecipes/api/` and decompress the archive `unzip initDB.zip` after you should to have a `restor` dir, so go inside.
+First you should to go in `goodrecipes/api/` and decompress the archive `unzip initDB.zip` after you should to have a `restore` dir, go inside.
 When you are in `goodrecipes/api/restore/` you can see a dump dir just use `mongorestore` command to build the foodapi database.    
 Now you need to provide pictures, it's easy just copy and paste the dir `goodrecipes/api/restore/pictures` in `goorecipes/api/public/` 
 
 ## Authors
 
-### Clovis Kyndt
+#### Clovis Kyndt
 
 - Works: Web application, API, Conception.
 - Contact: [Github](https://github.com/Manawasp), [Website](http://cloviskyndt.com)
-
-## Source
-
-- [installation Rails via RVM - recommended](http://doc.ubuntu-fr.org/rubyonrails)
